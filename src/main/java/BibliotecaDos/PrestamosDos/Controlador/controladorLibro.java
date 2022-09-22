@@ -5,6 +5,7 @@ import BibliotecaDos.PrestamosDos.Servicios.servicioLibro;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -17,7 +18,7 @@ public class controladorLibro {
         this.servicio = servicio;
     }
     @GetMapping("/ListaLibros")
-    public ArrayList<Libro> listar() {
+    public List<Libro> listar() {
 
         return servicio.listaLibros();
     }

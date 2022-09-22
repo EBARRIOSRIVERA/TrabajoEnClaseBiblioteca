@@ -7,6 +7,7 @@ import org.springframework.util.ReflectionUtils;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -18,9 +19,9 @@ public class servicioLibro {
 
         this.repositorio = repositorio;
     }
-    public ArrayList<Libro> listaLibros() { //Consultar Todos
+    public List<Libro> listaLibros() { //Consultar Todos
 
-        return (ArrayList<Libro>) repositorio.findAll();
+        return  repositorio.findAll();
     }
     public Optional<Libro> buscaLibro(String isbn) { //Consultar Libro Por Id
         return repositorio.findById(isbn);
