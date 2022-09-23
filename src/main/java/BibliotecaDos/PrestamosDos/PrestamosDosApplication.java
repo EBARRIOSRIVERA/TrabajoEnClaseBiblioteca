@@ -8,7 +8,7 @@ public class PrestamosDosApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(PrestamosDosApplication.class, args);
+			SpringApplication.run(PrestamosDosApplication.class, args);
 	}
 
 }
